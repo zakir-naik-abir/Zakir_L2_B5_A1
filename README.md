@@ -1,23 +1,27 @@
 # Zakir_L2_B5_A1
 
-Question Number 1:
+Question Number 1: What are some differences between interfaces and types in TypeScript?
 
 Here are some differences between interfaces and types in TypeScript:
+
 Declaration Merging:
 Interfaces are open to declaration merging, meaning that multiple declarations with the same name will be merged into a single declaration. Types, on the other hand, cannot be merged.
+
 Extending:
 Interfaces can extend other interfaces and classes, while types cannot extend classes. However, types can intersect with other types using the & operator.
+
 Use Cases:
 Interfaces are primarily used to define the shape of objects and class contracts. Types are more versatile and can be used to define aliases for any kind of type, including primitive types, union types, and intersection types.
+
 Syntax:
 Interfaces are defined using the interface keyword, while types are defined using the type keyword.
+
 Error Messages:
 When encountering errors related to interfaces, TypeScript often provides more descriptive and helpful error messages compared to errors related to types.
 
 
 
-Question Number 2:
-Provide an example of using union and intersection types in TypeScript.
+Question Number 2: Provide an example of using union and intersection types in TypeScript.
 
 Union types allow a variable or parameter to hold more than one possible type.
 
@@ -54,14 +58,14 @@ interface Employee {
 
 type EmployeeDetails = Person & Employee;
 
-const john: EmployeeDetails = {
-  name: "John Doe",
-  age: 30,
+const zakir: EmployeeDetails = {
+  name: "Zakir Naik",
+  age: 23,
   employeeId: 1234,
-  department: "HR"
+  department: "Developer"
 };
 
-console.log(john.name);        // Output: John Doe
-console.log(john.department);  // Output: HR
+console.log(zakir.name);        // Output: Zakir Naik
+console.log(zakir.department);  // Output: Developer
 
 
